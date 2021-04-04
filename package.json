@@ -1,0 +1,26 @@
+{
+  "name": "th_comm.rn",
+  "version": "0.0.1",
+  "description": "It's react native common things",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "lib"
+  ],
+  "author": "huhuang03@gmail.com",
+  "license": "ISC",
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-native": "^0.64.0"
+  },
+  "devDependencies": {
+    "@types/react-native": "^0.64.2",
+    "rollup": "^2.44.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.2.3"
+  }
+}
