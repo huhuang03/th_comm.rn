@@ -23,7 +23,7 @@ class Dp {
 // Error: Invalid hook call. Hooks can only be called inside of the body of a function component. 
 var _gDpInstance: Dp;
 
-function gDpInit(width: number) {
+function gDpInit(width: number = 750) {
    _gDpInstance = new Dp(width);  
 }
 
