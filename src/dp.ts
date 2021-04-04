@@ -1,4 +1,5 @@
-import { useWindowDimensions } from "react-native";
+ import React from 'react';
+ import { useWindowDimensions } from "react-native";
 
 class Dp {
     width: number = 750;
