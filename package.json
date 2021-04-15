@@ -1,6 +1,6 @@
 {
   "name": "th_comm.rn",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "It's react native common things",
   "main": "lib/index.js",
   "scripts": {
@@ -14,8 +14,8 @@
   "license": "ISC",
   "dependencies": {},
   "peerDependencies": {
-    "react": "^17.0.2",
-    "react-native": "^0.64.0"
+    "react": "^16.0",
+    "react-native": "^0.63.0"
   },
   "devDependencies": {
     "@types/react-native": "^0.64.2",
