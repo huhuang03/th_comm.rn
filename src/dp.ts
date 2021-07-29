@@ -1,13 +1,17 @@
- import React from 'react';
- import { useWindowDimensions } from "react-native";
+import {Dimensions} from 'react-native';
 
 class Dp {
     width: number = 750;
-    windoWidth: number = 720;
+
+    // real window width
+    windowWidth: number = 720;
+
+    widthScale: number = 1;
 
     constructor(width: number = 750) {
         this.width = width;
-        this.windoWidth = useWindowDimensions().width;
+        this.windowWidth = Dimensions.get('window').width;
+        this.widthScale = this.windowWidth * this.width;
     }
 
     /**
@@ -15,23 +19,25 @@ class Dp {
      * @returns 要设置给控件的尺寸
      */
     dp(val: number): number {
-        return (val / this.width) * this.windoWidth;
-        // return 0;
+        return val * this.widthScale;
     }
 }
 
-// Error: Invalid hook call. Hooks can only be called inside of the body of a function component. 
-var _gDpInstance: Dp;
+let _gDpInstance: Dp;
 
 function gDpInit(width: number = 750) {
-   _gDpInstance = new Dp(width);  
+   _gDpInstance = new Dp(width);
 }
 
-function gDp(val: number): number {
+function gDp(val: number, width:number = 750): number {
+    if (!_gDpInstance) {
+      gDpInit(width);
+    }
     return _gDpInstance.dp(val);
 }
 
 export default Dp;
+
 export {
     gDpInit,
     gDp
