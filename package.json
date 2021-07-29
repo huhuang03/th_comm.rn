@@ -1,6 +1,6 @@
 {
   "name": "th_comm.rn",
-  "version": "0.0.2",
+  "version": "0.0.3-alpha.2",
   "description": "It's react native common things",
   "main": "lib/index.js",
   "scripts": {
