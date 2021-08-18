@@ -1,6 +1,6 @@
 {
   "name": "th_comm.rn",
-  "version": "0.0.4-alpha.6",
+  "version": "0.0.4-alpha.7",
   "description": "It's react native common things",
   "main": "lib/index.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
-    "lib"
+    "lib",
+    "src"
   ],
   "author": "huhuang03@gmail.com",
   "license": "ISC",
@@ -24,3 +25,4 @@
     "typescript": "^4.2.3"
   }
 }
+

@@ -27,7 +27,7 @@ class Dp {
    * @param val
    */
   sp(val: number): number {
-    return this.dp(val) * 1.4;
+    return this.dp(val) * 1.0;
   }
 }
 
